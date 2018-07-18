@@ -1,0 +1,21 @@
+1、git分支创建：git branch XXX
+2、git切换分支：git checkout XXX
+3、git删除分支：git branch -d XXX
+4、git无法克隆自己账户下面的仓库解决办法：	https://help.github.com/articles/connecting-to-github-with-ssh/
+
+	第一步看 ls -al ~/.ssh查看有没有秘钥
+	第二步 ssh-keygen -t rsa -b 4096 -C "576985818@qq.com"
+	第三步在账户里面添加新的SSH key
+
+5、git创建一个远程仓库然后提交过程
+
+	5.1添加文件到仓库当中
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:GzBicq/ConfigMeldAsDifftool.git
+git push -u origin master
+
+	5.2 直接用命令行创建一个远程仓库
+git remote add origin git@github.com:GzBicq/ConfigMeldAsDifftool.git
+git push -u origin master
