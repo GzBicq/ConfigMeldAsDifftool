@@ -1,0 +1,7 @@
+[user]
+        email = 576985818@qq.com
+        name = GzBicq
+[diff]
+        tool = Meld
+[difftool "Meld"]
+        path = G:\\Tools\\Meld\\Meld.exe
